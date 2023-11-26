@@ -1,0 +1,121 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+table {
+    width: 100%;
+}
+table th {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+table th,
+table td {
+    padding: 0.4em;
+}
+table.tassawer > tbody > tr.view td,
+table.tassawer > tbody > tr.view th {
+    cursor: pointer;
+}
+table.tassawer > tbody > tr.view td:first-child,
+table.tassawer > tbody > tr.view th:first-child {
+    position: relative;
+    padding-left: 20px;
+}
+table.tassawer > tbody > tr.view td:first-child:before,
+table.tassawer > tbody > tr.view th:first-child:before {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 9px;
+    height: 16px;
+    margin-top: -8px;
+    font: 16px fontawesome;
+    color: #fff;
+    content: "\f0d7";
+    transition: all 0.3s ease;
+}
+/* table.tassawer > tbody > tr.view:nth-child(4n-1) {
+    background: #2F353D;
+}
+table.tassawer > tbody > tr.view.open {
+    background: tomato;
+    color: white;
+} */
+table.tassawer > tbody > tr.view.open td:first-child:before,
+table.tassawer > tbody > tr.view.open th:first-child:before {
+    transform: rotate(-180deg);
+    color: #2F353D;
+}
+table.tassawer > tbody > tr.fold {
+    display: none;
+}
+table.tassawer > tbody > tr.fold.open {
+    display: table-row;
+}
+.fold-content {
+    padding: 0.5em;
+}
+.fold-content h3 {
+    margin-top: 0;
+}
+.fold-content > table {
+    border: 1px solid #2F353D;
+}
+.fold-content > table > tbody tr:nth-child(even) {
+    background: #2F353D;
+}
+span.button.license-key-btn {
+	font-size: 11px !important;
+}
+
+table.th-license-content th.th-first,
+table.th-license-content td.th-first {
+	width: 30%;
+}
+
+table.th-license-content th.th-second,
+table.th-license-content td.th-second {
+	width: 70%;
+}
+table.th-license-content th,
+table.th-license-content td {
+	padding: 0.5em 1.5em;
+}
+table.th-license-content th {
+	color: #41454A;
+}
+
+
+.singer-info {
+    display: flex;
+    align-items: center;
+    padding: 50px 0 50px 10%;
+}
+
+.singer-info figure {
+    margin-right: 50px;
+}
+
+.singer-info figure img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.singer-description {
+    color: #DDD;
+}
+
+.process {
+    position: relative;
+    z-index: 2;
+}
+.process::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    content: '';
+    width: 78%;
+    background: #08c;
+}
